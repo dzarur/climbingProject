@@ -1,5 +1,5 @@
 import { Button, StyleSheet, View, Text } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+
 
 
 
@@ -7,7 +7,7 @@ const Home = () => {
     return(
     <View style={styles.container}>
         <Text style={styles.boldText}>Welcome</Text>
-        <View href="google.com">
+        <View>
             <Button title="SignUp" />
         </View>
     </View>
