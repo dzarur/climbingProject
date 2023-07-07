@@ -1,15 +1,19 @@
-import { Button, StyleSheet, View, Text } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-
+import { StyleSheet, View, Text } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 
 const Home = () => {
     return(
     <View style={styles.container}>
+           <NavigationContainer>
+                name = "SignUp"
+                component = {SignUpScreen}
+                options={{title: 'Welcome'}}
+            </NavigationContainer>
         <Text style={styles.boldText}>Welcome</Text>
-        <View href="google.com">
-            <Button title="SignUp" />
-        </View>
+    
     </View>
     
     )
