@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -69,12 +70,13 @@ const styles = StyleSheet.create({
   },
   label: {
     fontWeight: 'bold',
+    color: '#ff3385',
     marginBottom: 5,
   },
   input: {
     height: 40,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#ff3385',
     borderRadius: 4,
     paddingHorizontal: 10,
   },
