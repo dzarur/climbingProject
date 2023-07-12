@@ -1,13 +1,16 @@
 import { StyleSheet, Button, View, Text } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 export default function Home({ navigation }){
     return(
     <View style={styles.container}>
-        <Text>Home Page</Text>
+        <Text style={styles.boldText}>Home Page</Text>
+        <StatusBar style = "auto"/>
         <Button 
          title="Click me to signUp!!!" 
-         onPress={() => navigation.navigate('SignUp')}
+         onPress={() => navigation.navigate("SignUp")}
          />
+
     </View>
     
     )
@@ -27,6 +30,7 @@ alignItems: 'center',
         paddingLeft: 150,
         backgroundColor: 'black',
         color: 'rgb(69, 224, 52)',
+        textAlign: "center",
         
     }
 })
