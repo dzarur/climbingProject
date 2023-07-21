@@ -23,7 +23,7 @@ const LoginScreen = () => {
 
 export function LogInToAsend() {
   return (
-    <View style={styles.root1}>
+    <View style={styles.title}>
       <Text style={styles.title}>
         Log in to Asend
       </Text>
@@ -34,8 +34,6 @@ export function LogInToAsend() {
 const styles = StyleSheet.create({
   root: {
     backgroundColor: '#110E0E',
-  },
-  root1: {
     width: 209,
     height: 36,
     justifyContent: 'center',
